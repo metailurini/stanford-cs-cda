@@ -35,8 +35,19 @@ def main():
         )
         for name in os.listdir('data')
     ]
-    print(courses.keys())
-    print(MONTHS)
+    # print(MONTHS)
+    keys = list(courses.keys())
+    avgs = []
+
+    [
+        avgs.append([key, sum(courses[key]) / (len(courses[key]) + 1e-6)])
+        for key in keys
+    ]
+
+    avgs.sort(key=lambda x: x[1], reverse=True)
+    courses = [course[0] for course in avgs]
+
+    print(courses[:3])
 
 
 if __name__ == "__main__":

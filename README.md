@@ -33,3 +33,9 @@
   ```
 - Download each report
 - Using `process.py` for processing data.
+
+## Result
+> *Thứ hai, 31 Tháng 1 năm 2022 01:17:24 +07*
+
+***Top 3***: ['CS50: (United States)', 'CS300: (United States)', 'CS106A: (United States)']
+
